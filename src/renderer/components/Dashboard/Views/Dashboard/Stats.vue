@@ -69,7 +69,7 @@
     },
     computed: {
       widgets () {
-        return this.$store.state.Pages.stats.widgets
+        return this.$store.state.Pages[0].widgets
       }
     },
     data () {

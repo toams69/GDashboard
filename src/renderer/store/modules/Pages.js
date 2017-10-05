@@ -1,14 +1,16 @@
-const state = {
-  stats: {
+const state = [
+  {
     name: 'Statistic',
+    icon: 'ti-clipboard',
+    path: '/admin/stats',
     widgets: [
     ]
   }
-}
+]
 
 const mutations = {
   SOCKET_CONNECT: function (state, status) {
-    state.stats.widgets.push({
+    state[0].widgets.push({
       type: 'chart',
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],

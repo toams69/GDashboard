@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
 
-    <side-bar type="sidebar" :sidebar-links="$sidebar.sidebarLinks">
+    <side-bar type="sidebar" :sidebar-links="links">
       <form class="navbar-form navbar-left navbar-search-form navbar-search-form-mobile" role="search">
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-search"></i></span>
@@ -45,6 +45,11 @@
         if (this.$sidebar.showSidebar) {
           this.$sidebar.displaySidebar(false)
         }
+      }
+    },
+    computed: {
+      links () {
+        return this.$store.state.Pages
       }
     }
   }
