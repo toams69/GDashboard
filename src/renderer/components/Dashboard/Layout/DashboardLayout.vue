@@ -2,7 +2,6 @@
   <div class="wrapper">
 
     <side-bar type="sidebar" :sidebar-links="$sidebar.sidebarLinks">
-      <user-menu></user-menu>
       <form class="navbar-form navbar-left navbar-search-form navbar-search-form-mobile" role="search">
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-search"></i></span>
@@ -31,7 +30,6 @@
   import ContentFooter from './ContentFooter.vue'
   import DashboardContent from './Content.vue'
   import MovingArrow from '@/components/UIComponents/SidebarPlugin/MovingArrow.vue'
-  import UserMenu from '@/components/UIComponents/SidebarPlugin/UserMenu.vue'
   import MobileMenu from '@/components/UIComponents/SidebarPlugin/MobileMenu.vue'
 
   export default {
@@ -40,7 +38,6 @@
       ContentFooter,
       DashboardContent,
       MovingArrow,
-      UserMenu,
       MobileMenu
     },
     methods: {

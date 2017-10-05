@@ -16,31 +16,8 @@
         <a class="navbar-brand">{{this.$route.name}}</a>
       </div>
       <div class="collapse navbar-collapse">
-        <form class="navbar-form navbar-left navbar-search-form" role="search">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-          </div>
-        </form>
         <ul class="nav navbar-nav navbar-right">
-          <li class="open">
-            <router-link to="/admin/stats" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
-              <i class="ti-panel"></i>
-              <p>Stats</p>
-            </router-link>
-          </li>
-          <drop-down tag="li" title="5" icon="ti-bell">
-            <li><a href="#">Notification 1</a></li>
-            <li><a href="#">Notification 2</a></li>
-            <li><a href="#">Notification 3</a></li>
-            <li><a href="#">Notification 4</a></li>
-            <li><a href="#">Another notification</a></li>
-          </drop-down>
-          <li>
-            <router-link to="/admin/overview" class="btn-rotate">
-              <i class="ti-settings"></i>
-            </router-link>
-          </li>
+
         </ul>
       </div>
     </div>
